@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/ben/study/programming/k37x/begin/cjson-example'
+let g:netrw_dirhist_8='/home/ben/study/programming/cpp/test/thread/pthread/externc/mistake'
+let g:netrw_dirhist_7='/home/ben/study/programming/cpp/test/thread/pthread'
+let g:netrw_dirhist_6='/home/ben/study/programming/cpp/test/thread'
+let g:netrw_dirhist_5='/home/ben/study/programming/cpp/test/thread/pthread'
+let g:netrw_dirhist_4='/home/ben/study/programming/cpp/test/thread/pthread/test'
+let g:netrw_dirhist_3='/home/ben/study/programming/cpp/test/thread/pthread'
+let g:netrw_dirhist_2='/home/ben/study/programming/cpp/test/thread'
+let g:netrw_dirhist_1='/home/ben/study/programming/cpp/test/thread/pthread'
