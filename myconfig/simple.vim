@@ -1,3 +1,5 @@
+let mapleader=" "
+
 set nu
 set cursorline
 set wildmenu

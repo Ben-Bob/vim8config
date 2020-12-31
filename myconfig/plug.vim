@@ -11,6 +11,14 @@ Plug 'connorholyday/vim-snazzy'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" esay completion
+"Plug 'jayli/vim-easycomplete'
+"Plug 'garbas/vim-snipmate'
+"Plug 'jayli/vim-dictionary'
 
 " File navigation
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -50,6 +58,10 @@ Plug 'vim-scripts/indentpython.vim'
 
 " Markdown
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+
 
 " Bookmarks
 Plug 'kshenoy/vim-signature'
@@ -152,6 +164,19 @@ function! s:show_documentation()
 endfunction
 
 " ===
+" === snippets
+" ===
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" ===
+" === easycomplete
+" ===
+"imap <Tab>   <Plug>EasyCompTabTrigger
+"imap <S-Tab> <Plug>EasyCompShiftTabTrigger
+
+" ===
 " === ale
 " ===
 let b:ale_linters = ['pylint']
@@ -163,6 +188,10 @@ let b:ale_fixers = ['autopep8', 'yapf']
 " ===
 map <silent> T :TagbarOpenAutoClose<CR>
 
+" ===
+" === markdown
+" ===
+let g:vim_markdown_math = 1
 
 " ===
 " === MarkdownPreview
@@ -173,7 +202,8 @@ let g:mkdp_refresh_slow = 0
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 let g:mkdp_open_ip = ''
-let g:mkdp_browser = 'chromium'
+let g:mkdp_browser = 'firefox'
+let g:mkdp_path_to_chrome = "firefox"
 let g:mkdp_echo_preview_url = 0
 let g:mkdp_browserfunc = ''
 let g:mkdp_preview_options = {
@@ -190,6 +220,10 @@ let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
 
+nmap <silent> <F8> <Plug>MarkdownPreview        " for normal mode
+imap <silent> <F8> <Plug>MarkdownPreview        " for insert mode
+nmap <silent> <F9> <Plug>StopMarkdownPreview    " for normal mode
+imap <silent> <F9> <Plug>StopMarkdownPreview    " for insert mode
 
 " ===
 " === vim-table-mode
