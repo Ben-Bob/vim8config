@@ -11,8 +11,9 @@ git clone https://github.com/Ben-Bob/vim8config.git
 mv vim8config/ .vim
 mv .vim/.vimrc .
 ```
-* install the requested software for some vim plugins(like fzf, nodejs)
+* install the requested software for some vim plugins(like fzf, nodejs,ccls)
 ```shell
+sudo apt install ccls
 sudo apt install fzf
 sudo apt install ranger
 sudo apt install nodejs
